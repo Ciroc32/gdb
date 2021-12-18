@@ -1,0 +1,18 @@
+------ assembly example ------
+cmp esi, ecx
+je kraj
+
+mov r13d, [r8 + 4*rcx] # r13d = a[i]
+
+mov eax, [r8 + 4*rcx] # eax = a[i]
+mov r12d, 2
+cdq
+idiv r12d # eax = a[i]/2
+mov r15d,eax # r15d = a[i]/2
+
+xor r14d,r14d # r14d = brojac
+------------------------------
+
+example 2
+
+mov r13d, [r8 + 4*rcx]

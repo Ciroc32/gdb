@@ -1,0 +1,15 @@
+MEMOIRE
+PROCESSEUR
+
+int i = 2 -> MEMOIRE
+int i2 = 1 -> MEMOIRE
+
+i += i2
+
+MEMOIRE:&i -> EAX
+MEMOIRE:&i2 -> EBX
+
+---
+ADD EAX, EBX ; -> 3
+MOV [i], EAX
+---
